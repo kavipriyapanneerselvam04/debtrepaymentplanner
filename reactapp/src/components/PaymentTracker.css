@@ -1,0 +1,13 @@
+.payment-tracker-container {
+  padding: 20px;
+}
+
+.payments-placeholder {
+  height: 300px;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #92400e;
+}

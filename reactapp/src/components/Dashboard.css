@@ -1,0 +1,132 @@
+/* Dashboard container */
+.dashboard {
+  padding: 80px 20px 40px;   /* pushes content below navbar */
+  text-align: center;        /* center heading & text */
+}
+
+/* Heading style */
+.dashboard h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+}
+
+/* Subheading/paragraph */
+.dashboard p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Card grid */
+.dashboard-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Individual cards */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 260px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+/* Card hover */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Card titles */
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+/* Card text */
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card.clickable {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card.clickable:hover {
+  background: #f3e8ff;
+  transform: scale(1.03);
+}
+
+.planner-overview-box {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 700px;
+  background: #f3e8ff;
+  border-left: 6px solid #6a11cb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.planner-overview-box h3 {
+  margin-bottom: 10px;
+  color: #6a11cb;
+  font-weight: bold;
+}
+
+.planner-overview-box p {
+  color: #333;
+  line-height: 1.6;
+}
+.planner-overview-box {
+  margin: 40px auto;
+  padding: 24px;
+  max-width: 750px;
+  background: white;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(90deg, #6a11cb, #2575fc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.planner-overview-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.planner-overview-box p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.planner-overview-box .highlight {
+  color: #2575fc;
+  font-weight: 600;
+}
+
+.planner-overview-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}

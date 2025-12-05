@@ -1,0 +1,97 @@
+/* Container */
+.debt-portfolio {
+  min-height: 100vh; /* full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+.portfolio-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+/* Grid wrapper */
+.debt-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card */
+.debt-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.debt-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Card title */
+.debt-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+/* Card text */
+.debt-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Add Loan button */
+.add-loan-btn {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-loan-btn:hover {
+  background: linear-gradient(135deg, #0284c7, #1d4ed8);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 1.6rem;
+  }
+
+  .debt-card {
+    max-width: 90%;
+    padding: 24px 18px;
+  }
+
+  .add-loan-btn {
+    width: 100%;
+  }
+}

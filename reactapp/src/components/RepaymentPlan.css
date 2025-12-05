@@ -1,0 +1,318 @@
+src/components/RepaymentPlan.css
+
+.repayment-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.repayment-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4a148c; /* deep purple */
+}
+
+.repayment-container label {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+.repayment-container select {
+  margin-left: 10px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.repayment-plan {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.repayment-plan table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.repayment-plan th,
+.repayment-plan td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.repayment-plan th {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: 600;
+}
+
+.repayment-plan tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.repayment-plan tr:hover {
+  background-color: #f1f1f1;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+}
+
+.add-another-btn {
+  margin-top: 20px;
+  background: #6a11cb;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-another-btn:hover {
+  background: #2575fc;
+}
+/* src/components/RepaymentPlan.css */
+
+.repayment-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.repayment-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4a148c; /* deep purple */
+}
+
+.repayment-container label {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+
+.repayment-container select {
+  margin-left: 10px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ✅ Controls (Search + Sort) */
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.controls select {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.controls button {
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #2575fc;
+}
+
+.repayment-plan {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.repayment-plan table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.repayment-plan th,
+.repayment-plan td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.repayment-plan th {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: 600;
+}
+
+.repayment-plan tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.repayment-plan tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ✅ Pagination styling */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+}
+
+.pagination button {
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #2575fc;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+}
+
+
+.add-another-btn {
+  margin-top: 20px;
+  background: #6a11cb;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-another-btn:hover {
+  background: #2575fc;
+}
+
+.filter-sort-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 12px;
+}
+
+.filter-sort-bar input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.filter-sort-bar select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+/* ✅ Filter & Sort Bar Styling */
+.filter-sort-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  gap: 12px;
+}
+
+.filter-sort-bar input,
+.filter-sort-bar select {
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.filter-sort-bar input:focus,
+.filter-sort-bar select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+}
+
+/* ✅ Mobile Responsive (stack vertically) */
+@media (max-width: 600px) {
+  .filter-sort-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-sort-bar input,
+  .filter-sort-bar select {
+    width: 100%;
+  }
+}

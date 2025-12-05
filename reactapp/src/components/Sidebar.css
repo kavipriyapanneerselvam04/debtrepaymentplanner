@@ -1,0 +1,55 @@
+/* Container styles */
+.sidebar-container {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Title */
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
+/* Nav container */
+.sidebar-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Nav items */
+.sidebar-item {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover effect */
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Active state */
+.sidebar-item.active {
+  background: #fff;
+  color: #4f46e5;
+  font-weight: 600;
+}
